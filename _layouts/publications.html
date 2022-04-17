@@ -1,0 +1,422 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="page">
+<style>
+    /*********************************
+     The list of publication items
+     *********************************/
+/* The list of items */
+.biblist { }
+
+/* The item */
+.biblist li { }
+
+/* You can define custom styles for plstyle field here. */
+
+
+/*************************************
+ The box that contain BibTeX code
+ *************************************/
+div.noshow { display: none; }
+div.bibtex {
+	margin-right: 0%;
+	margin-top: 1.2em;
+	margin-bottom: 1em;
+	border: 1px solid silver;
+	padding: 0em 1em;
+	background: #ffffee;
+}
+div.bibtex pre { font-size: 75%; overflow: auto;  width: 100%; padding: 0em 0em;}</style>
+<script type="text/javascript">
+    <!--
+    // Toggle Display of BibTeX
+    function toggleBibtex(articleid) {
+        var bib = document.getElementById('bib_'+articleid);
+        if (bib) {
+            if(bib.className.indexOf('bibtex') != -1) {
+                bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+            }
+        } else {
+            return;
+        }
+    }
+-->
+    </script>
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http://' %}
+      "{{ page.image.feature }}"
+    {% elsif page.image.feature contains 'https://' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article>
+    <h1>{{ page.title }}</h1>
+    <div class="article-wrap">
+      {{ content }}
+
+
+
+<h4 style="margin-bottom:0px;padding-top:10px;">Publicaciones</h4>
+<!-- Generated from JabRef by PubList by Truong Nghiem at 11:44 on 2015.09.10. -->
+<ul class="biblist">
+
+  <!-- Item: Kuznetsova2020 -->
+<li ><p>
+  Pineda, L. y Golem G., 
+<br><b>The Golem Team, RoboCup@Home 2020</b><br>
+<i>Proceedings of RoboCup 2020</i>, pp 2020.
+<br />
+
+<a href=".\Golem_TDP.pdf" target="_blank">[PDF]</a> 
+
+</li>
+
+
+<!-- Item: Maninis2018b -->
+<li ><p>
+  Maqueda, E., Álvarez, J. y <a href="https://turing.iimas.unam.mx/~ivanvladimir/" target="_blank">Meza, I</a>
+<br><b>Triplet loss based embeddings for forensic speaker identification in Spanish</b><br>
+<i>LatinX in AI Research at NeurIPS 2020</i>, pp 2, 2020.
+<br />
+<a href="javascript:toggleBibtex('forensic')">[BibTeX]</a>
+<a href="https://arxiv.org/pdf/2102.12564.pdf" target="_blank">[PDF]</a>
+</p>
+<div id="bib_forensic" class="bibtex noshow">
+<pre>
+@Article{forensicspeech,
+  author = {Maqueda, E., Álvarez, J.y Meza, I}  ,
+  title = {Triplet loss based embeddings for forensic speaker identification in Spanish},
+  journal = {LatinX in AI Research at NeurIPS 2020},
+  year = {2020},
+  volume = {1},
+  number = {1},
+  pages = {2-2}
+}
+</pre>
+</div>
+</li>
+
+
+<!-- Item: Maninis2018 
+<li ><p>
+<a href="http://www.vision.ee.ethz.ch/~kmaninis" target="_blank">K.K. Maninis</a>, J. Pont-Tuset, <a href="https://biomedicalcomputervision.uniandes.edu.co" target="_blank">P. Arbeláez</a> and <a href="http://www.vision.ee.ethz.ch/members/get_member.cgi?id=1" target="_blank">L. Van Gool</a><br><b>Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks</b><br>
+<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</i>, vol. 40, no. 4, pp. 819 - 833, 2018.
+<br />
+<a href="javascript:toggleBibtex('Maninis2018')">[BibTeX]</a>
+<a href="http://arxiv.org/abs/1701.04658" target="_blank">[PDF]</a> <a href="http://www.vision.ee.ethz.ch/~cvlsegmentation/cob/"  target="_blank">[Project Page]</a>
+</p>
+<div id="bib_Maninis2018" class="bibtex noshow">
+<pre>
+@article{Maninis2018,
+  author = {Maninis, Kevis-Kokitsi and Pont-Tuset, Jordi and Arbel&aacute;ez, Pablo and {Van Gool}, Luc},
+  title = {Convolutional Oriented Boundaries: From Image Segmentation to High-Level Tasks},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
+  year = {2018},
+  volume = {40},
+  number = {4},
+  pages = {819 - 833}
+}
+</pre>
+</div>
+</li>
+-->
+
+    <!-- Item: Pont-Tuset2017 
+    <li ><p>
+    J. Pont-Tuset, <a href="https://biomedicalcomputervision.uniandes.edu.co" target="_blank">P. Arbeláez</a>, <a href="http://www.cs.berkeley.edu/~barron/" target="_blank">J. Barron</a>, <a href="https://imatge.upc.edu/web/ferran" target="_blank">F. Marques</a>, and <a href="http://www.cs.berkeley.edu/~malik/" target="_blank">J. Malik</a>
+    <br><b>Multiscale Combinatorial Grouping for Image Segmentation and Object Proposal Generation</b><br>
+<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</i>,
+vol. 39,
+no. 1,
+pp. 128 - 140,
+
+2017.
+
+<br />
+    <a href="javascript:toggleBibtex('Pont-Tuset2017')">[BibTeX]</a>
+    <a href="http://ieeexplore.ieee.org/document/7423791/" target="_blank">[PDF]</a> <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/" target="_blank">
+    [Project Page]</a>
+</p>
+<div id="bib_Pont-Tuset2017" class="bibtex noshow">
+<pre>
+@article{Pont-Tuset2017,
+  author = {J. Pont-Tuset and P. Arbel\'{a}ez and J. Barron and F.Marques and J. Malik},
+  title = {Multiscale Combinatorial Grouping for Image Segmentation and Object Proposal Generation},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
+  year = {2017},
+  volume = {39},
+  number = {1},
+  pages = {128 - 140}
+}
+</pre>
+</div>
+</li>
+-->
+
+<!-- Item: Pont-Tuset2016a
+<li ><p>
+J. Pont-Tuset and <a href="https://imatge.upc.edu/web/ferran" target="_blank">F. Marques</a>
+<br><b>Supervised Evaluation of Image Segmentation and Object Proposal Techniques</b><br>
+<i>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</i>,
+vol. 38,
+no. 7,
+pp. 1465-1478,
+
+2016.
+
+<br />
+<a href="javascript:toggleBibtex('Pont-Tuset2016a')">[BibTeX]</a>
+<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7274729" target="_blank">[PDF]</a> <a href="http://www.vision.ee.ethz.ch/~cvlsegmentation/seism/index.html" target="_blank">
+[Project Page]</a> 
+</p>
+<div id="bib_Pont-Tuset2016a" class="bibtex noshow">
+<pre>
+@article{Pont-Tuset2016a,
+  author = {Jordi Pont-Tuset and Ferran Marques},
+  title = {Supervised Evaluation of Image Segmentation and Object Proposal Techniques},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
+  year = {2016},
+  volume = {38},
+  number = {7},
+  pages = {1465--1478}
+}
+</pre>
+</div>
+</li>  
+ -->
+
+      </ul  >
+
+
+
+
+
+
+<h4 style="margin-bottom:0px;padding-top:10px;">Ponencias</h4>
+
+<!-- Generated from JabRef by PubList by Truong Nghiem at 10:08 on 2017.01.16. -->
+<ul class="biblist">
+
+<!-- Item: Farre2017 -->
+
+
+<li ><p>Maqueda, E., Álvarez, J. y <a href="https://turing.iimas.unam.mx/~ivanvladimir/" target="_blank">Meza, I</a> <br>
+<b>Towards forensic speaker identification in Spanish using triplet loss</b><br>
+LatinX in AI Research at NeurIPS 2020<br>
+<b>Vancouver, Cánada,<br>  
+  Diciembre, 2020</b> 
+  
+  
+<br>
+<a href=".\Maqueda_short_45.png">[Póster]</a>
+<a href="https://www.latinxinai.org/neurips-2020-about">[WebSite]</a>
+
+<li ><p>Maqueda, E y Meza, I <br>
+  <b>Identificación forense de hablantes en español usando Triplet Loss</b><br>
+  3er Congreso Esudiantil de Inteligencia Artificial Aplicada a la Ingeniería y la Tecnología (CEIAAIT)<br>
+  <b>Facultad de Estudios Superiores Cuautitlán, Noviembre, 2020</b> 
+  
+  
+  <br>
+  <a href="https://virtual.cuautitlan.unam.mx/intar/ceiaait/wp-content/uploads/sites/14/2021/03/10-Art%C3%ADculos-editados-79-80.pdf" target="_blank">[PDF]</a>
+  <a href="https://virtual.cuautitlan.unam.mx/intar/ceiaait/ano-2-tomo-2/">[WebSite]</a>
+
+
+
+<li ><p>Maqueda, E y Rosas-Otero, M <br>
+<b>Mejora de la conducta ‘ask´ para perfeccionar la interacción humano-robot en el robot de servicio Golem-III</b><br>
+2do Congreso Esudiantil de Inteligencia Artificial Aplicada a la Ingeniería y la Tecnología (CEIAAIT)<br>
+<b>Facultad de Estudios Superiores Cuautitlán, Noviembre, 2019</b> 
+
+
+<br>
+<a href=".\2_CEIAAIT_paper_15.pdf" target="_blank">[PDF]</a>
+<a href="https://virtual.cuautitlan.unam.mx/intar/ceiaait/fotos-del-congreso-2019/">[WebSite]</a>
+
+
+<li ><p>Maqueda, E <br>
+  <b>Usando Triplet Loss para la identificación forense de hablantes en español</b><br>
+  Ciclo de Conferencias de Inteligencia Artificial 2021-2 de la Sociedad de Inteligencia Artificial de la Facultad de Ingeniería (SIAFI)<br>
+  <b>Facultad de Ingeniería, Mayo, 2021</b> 
+  
+  
+  <br>
+  <a href=".\David_Emmanuel.png" target="_blank">[Póster]</a>  
+
+
+</ul>
+
+
+
+      
+
+
+
+
+
+<h4 style="margin-bottom:0px;padding-top:20px;">Asistencia</h4>
+
+    <ul class="biblist">
+<!-- Item: PontTuset2020 -->
+<li ><p>Tenth Lisbon Machine Learning School – LxMLS’2020
+<br><b>Instituto Superior Técnico, Instituto de Telecomunicações and INESC-ID</b><br>
+<i>Lisbon, Portugal</i>,
+2020.
+<br />
+<a href=".\Certificate LxMLS2020.pdf" target="_blank">[PDF]</a> <a href="http://lxmls.it.pt/2020/"  target="_blank">
+  [WebSite]</a> 
+</p>
+
+</li>
+
+
+    <!-- Item: Maninis2018b -->
+<li ><p>Taller de Soluciones Industriales basadas en Inteligencia Artificial (SIbIA2020)
+<br><b>Unidad de Transferencia Tecnológica Tepic - Centro de Investigación Científica y de Educación Superior de Ensenada (CICESE-UT)</b><br>
+<i>Baja California, México</i>,
+2020.
+<br />
+<a href=".\b0a9826a-a2a2-4659-a224-e9cc4e2a76a0.pdf" target="_blank">[PDF]</a> 
+<a href="https://sibia.cicese.mx/2020/">[WebSite]</a>
+
+</ul> 
+    <!--
+    <h4 style="margin-bottom:0px;padding-top:20px;">Written Theses</h4>-->
+    
+    <!-- Generated from JabRef by PubList by Truong Nghiem at 06:25 on 2015.07.08. -->
+    <ul class="biblist">
+        <!-- Item: Pont-Tuset2014 
+        
+        <li ><p>
+            PhD thesis<br>
+            <b>Image Segmentation Evaluation and Its Application to Object Detection</b><br>
+            Universitat Polit&egrave;cnica de Catalunya, UPC BarcelonaTech, 2014
+            
+            <br />
+            <a href="javascript:toggleBibtex('Pont-Tuset2014')">[BibTeX]</a>
+            
+            <a href="https://www.dropbox.com/s/o6g9j42xz6mwu97/JPontTuset_PhD_Thesis.pdf?dl=0"  target="_blank">[PDF]</a>
+            </p>
+            <div id="bib_Pont-Tuset2014" class="bibtex noshow">
+                <pre>@phdthesis{Pont-Tuset2014,
+    author = {Jordi Pont-Tuset},
+    title = {Image Segmentation Evaluation and Its Application to Object Detection},
+    school = {Universitat {P}olit\`{e}cnica de {C}atalunya, {UPC} {B}arcelona{T}ech},
+    year = {2014}
+}</pre>
+            </div>
+        </li>-->
+
+                <!-- Item: Pont-Tuset2009 
+        <li ><p>
+            M.Sc. thesis<br>
+            <b>Automatic extraction of the camera point of view in Football scenes</b><br>
+            Universitat Polit&egrave;cnica de Catalunya, UPC BarcelonaTech, 2009
+            
+            <br />
+            <a href="javascript:toggleBibtex('Pont-Tuset2009')">[BibTeX]</a>
+            
+            <a href="https://www.dropbox.com/s/humv6t0r3qlus6q/JPontTuset_Master_Thesis.pdf?dl=0"  target="_blank">[PDF]</a>
+            </p>
+            <div id="bib_Pont-Tuset2009" class="bibtex noshow">
+                <pre>@MastersThesis{Pont-Tuset2009,
+    author = {Jordi Pont-Tuset},
+    title = {Automatic extraction of the camera point of view in Football scenes},
+    school = {Universitat {P}olit\`{e}cnica de {C}atalunya, {UPC} {B}arcelona{T}ech},
+    year = {2009}
+}</pre>
+            </div>
+        </li>
+    </ul>
+    
+    -->
+  
+    
+    
+    
+    
+    
+    
+    
+    <!--
+    
+      <h4 style="margin-bottom:0px;padding-top:20px;">Other Vision Publications</h4>
+      
+      <ul class="biblist">-->
+      
+<!-- Item: Pont-Tuset2015a 
+<li ><p>
+J. Pont-Tuset, <a href="https://ch.linkedin.com/in/miquelangelfarre" target="_blank">M. Farr&eacute; Guiu</a>, and <a href="https://www.linkedin.com/in/aljosa-smolic-3a26644?" target="_blank">A. Smolic</a>
+<br><b>Semi-Automatic Video Object Segmentation by Advanced Manipulation of Segmentation Hierarchies</b><br>
+<i>International Workshop on Content-Based Multimedia Indexing (CBMI)</i>,
+
+
+
+
+2015
+
+<br />
+<a href="javascript:toggleBibtex('Pont-Tuset2015a')">[BibTeX]</a>
+<a href="https://data.vision.ee.ethz.ch/jpont/hdvoa/PontTusetFarreSmolic_CBMI2015.pdf">[PDF]</a> <a href="http://www.vision.ee.ethz.ch/~jpont/hdvoa/">
+[Dataset]</a> 
+</p>
+<div id="bib_Pont-Tuset2015a" class="bibtex noshow">
+<pre>
+@inproceedings{Pont-Tuset2015a,
+  author = {Pont-Tuset, J. and Farr&eacute;, M. and Smolic, A.},
+  title = {Semi-Automatic Video Object Segmentation by Advanced Manipulation of Segmentation Hierarchies},
+  booktitle = {International Workshop on Content-Based Multimedia Indexing (CBMI)},
+  year = {2015}
+}
+</pre>
+</div>
+</li>
+    -->  
+      
+      
+</pre>
+      </div>
+      </li>
+      </ul>
+    </div><!-- /.article-wrap -->
+    {% if site.disqus_shortname and page.comments %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    {% endif %}
+  </article>
+</div><!-- /#index -->
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}          
+
+</body>
+</html>

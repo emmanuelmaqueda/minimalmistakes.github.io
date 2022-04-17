@@ -12,16 +12,18 @@
 
 theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Emmanuel Maqueda's Website"
+title                    : "Emmanuel Maqueda"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Emmanuel Maqueda"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Welcome to my site"
+url                      : //emmanuelmaqueda.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -100,55 +102,45 @@ analytics:
     anonymize_ip         : # true, false (default)
 
 
-# Site Author
+
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+  name:           David Emmanuel Maqueda Bojorquez
+  avatar:         foto.png
+  bio:            " 'Demasiado juego para ser una ciencia y demasiada ciencia para ser un juego.' \n - Leibniz "
+  email:          dmaqueda71@gmail.com
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  t email:          dmaqueda71@gmail.com
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  facebook: demmanuel.maqueda
+  instagram : e_maqueda
+  twitter: emmanuelmaqueda
+  linkedin: emmanuel-maqueda
+  
+  google_scholar: 2kcO-_EAAAAJ&hl
+  #google_plus: 113718226018314522413
+  github: emmanuelmaqueda
+# Analytics and webmaster tools stuff goes here
 
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-
+links:
+  - title: Curriculum
+    url: /cv/
+  - title: Ponencias y publicaciones 
+    url: /publications/
+  - title: Proyectos
+    url: /code/
+  - title: Blog y recursos
+    url: /blog/
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Mexico_City
+future:      true
+#pygments:    true
+highlighter: rouge
+markdown:    kramdown
+kramdown:
+  extensions: ["strikethrough"]
+  
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
 
 # Reading Files
 include:
@@ -195,6 +187,12 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
+syntax_highlighter_opts:
+  line_numbers:
+  line_numbers_start: 1
+  tab_width: 4
+  bold_every: 10
+  css: class
 
 # Markdown Processing
 kramdown:
